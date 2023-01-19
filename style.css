@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #000000;
+}
+.letter {
+  color: #fff;
+  animation: movement 6s linear forwards;
+  animation-delay: 2s;
+}
+.Emblem img {
+  margin-left: 40px;
+  width: 420px;
+  animation: logo-movement 6s linear forwards;
+}
+.logo {
+  display: flex;
+  font-size: 40px;
+}
+@keyframes movement {
+  30% {
+    transform: translateY(100px) rotate3d(360deg);
+  }
+  60% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateY(220px) translateX(20px);
+    gap: 20px;
+  }
+}
+.letter-N {
+  animation-delay: 1.2s;
+}
+.letter-A {
+  animation-delay: 2.4s;
+}
+.letter-J {
+  animation-delay: 3.6s;
+}
+.letter-O {
+  animation-delay: 4.8s;
+}
+.letter-T {
+  animation-delay: 6s;
+}
+.letter-A2 {
+  animation-delay: 4.8s;
+}
+.letter-L {
+  animation-delay: 3.6s;
+}
+.letter-I {
+  animation-delay: 2.4s;
+}
+.letter-M {
+  animation-delay: 1.2s;
+}
+@keyframes logo-movement {
+  20% {
+    transform: translateY(150px) scale(1.4);
+  }
+  100% {
+    transform: translateY(100px) scale(1);
+  }
+}
